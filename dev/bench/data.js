@@ -1,6 +1,6 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1656698708490,
-  "repoUrl": "https://github.com/yewstack/yew",
+  "lastUpdate": 1658242381717,
+  "repoUrl": "https://github.com/quicujo/yew",
   "entries": {
     "Yew master branch benchmarks (Lower is better)": [
       {
@@ -20182,6 +20182,120 @@ window.BENCHMARK_DATA = {
           {
             "name": "yew-struct-keyed 34_startup-totalbytes",
             "value": "332.146484375",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "futursolo@users.noreply.github.com",
+            "name": "Kaede Hoshikawa",
+            "username": "futursolo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9d94f24a119fc558983c851827717464598cf3a5",
+          "message": "Prepared States dependency should be Reference Counted (#2769)\n\n* Makes Prepared States to be Rc'ed.\r\n\r\n* Update example.\r\n\r\n* Make prepared states work on none runtime as well.\r\n\r\n* Remove more feature flags.\r\n\r\n* Users always have to manually construct dependency into Rc.\r\n\r\n* Import Rc.\r\n\r\n* Revert \"Users always have to manually construct dependency into Rc.\"\r\n\r\nThis reverts commit 9eee1da3e9a46e69a7b07e6064eb163e06261bfb.\r\n\r\n* Revert \"Import Rc.\"\r\n\r\nThis reverts commit d6bb90dc155d2bf87fd18eec4b78b8e07a9cc7a7.",
+          "timestamp": "2022-07-19T22:59:39+09:00",
+          "tree_id": "63db906d4f8a7676efafcb70a1604d7d3e3219ec",
+          "url": "https://github.com/quicujo/yew/commit/9d94f24a119fc558983c851827717464598cf3a5"
+        },
+        "date": 1658242379376,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "yew-struct-keyed 01_run1k",
+            "value": "250.4765",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 02_replace1k",
+            "value": "275.47349999999994",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 03_update10th1k_x16",
+            "value": "436.9295",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 04_select1k",
+            "value": "59.264",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 05_swap1k",
+            "value": "121.1935",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 06_remove-one-1k",
+            "value": "39.5545",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 07_create10k",
+            "value": "4228.071",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 08_create1k-after1k_x2",
+            "value": "635.265",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 09_clear1k_x8",
+            "value": "275.22450000000003",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 21_ready-memory",
+            "value": "1.47186279296875",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 22_run-memory",
+            "value": "1.6936302185058594",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 23_update5-memory",
+            "value": "1.7010269165039062",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 24_run5-memory",
+            "value": "1.7194442749023438",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 25_run-clear-memory",
+            "value": "1.3335914611816406",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 31_startup-ci",
+            "value": "1878.65",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 32_startup-bt",
+            "value": "42.8",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 33_startup-mainthreadcost",
+            "value": "317.4080000000001",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 34_startup-totalbytes",
+            "value": "362.3330078125",
             "unit": ""
           }
         ]
